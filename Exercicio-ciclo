@@ -1,0 +1,14 @@
+ static boolean hasCycle(SinglyLinkedListNode no) {
+        ArrayList l = new ArrayList<>(); 
+        for (; no != null; no = no.next) {
+         if (l.contains(no)) {
+        return true;
+        } 
+        else {
+        l.add(no);
+    }
+}
+    
+    return false; 
+
+    }
